@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5719cf3f-8bd5-4d3f-a72e-133197c6c19d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Constants/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServicesMap/AbstractMapService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/DbManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/DbManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/ImplementCrudServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/ImplementCrudServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MainClass.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +29,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Constants" />
       <recent name="ServicesMap" />
+      <recent name="Constants" />
       <recent name="Functions" />
       <recent name="Services" />
     </key>
