@@ -31,7 +31,15 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Services" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Services" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\InfoGenie\IdeaProjects\ArchitectureCRUD\src\Models" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
