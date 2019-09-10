@@ -43,7 +43,7 @@ public class ImplementCrudServices {
                                 ("INSERT INTO Machine(reference,designation,date,price,breakDowns) VALUES(?,?,?,?,?)");
                 statement.setString(1,machine.getReference());
                 statement.setString(2,machine.getDesignation());
-                statement.setDate(3, (java.sql.Date) machine.getDate());
+                statement.setDate(3, (Date) machine.getDate());
                 statement.setDouble(4,machine.getPrice());
                 statement.setInt(5,machine.getBreakDowns());
                 if(statement.execute()){
@@ -68,7 +68,7 @@ public class ImplementCrudServices {
                             addPiece.setString(1,referencePieces.get(i).getReference());
                             addPiece.setString(2,pieces.getDesignation());
                             addPiece.setString(3,pieces.getRefFloor());
-                            addPiece.setDate(4, (java.sql.Date) pieces.getDate());
+                            addPiece.setDate(4, (Date) pieces.getDate());
                             addPiece.setDouble(5,pieces.getPrice());
                             addPiece.setInt(6,pieces.getQuantity());
                             int confirmAdd = addPiece.executeUpdate();
@@ -108,7 +108,7 @@ public class ImplementCrudServices {
                 String Sql_Stockouts = "INSERT INTO Stockouts(reference,notifyDate,idPiece,confirmAsk)VALUES(?,?,?,?)";
                 PreparedStatement statStockOuts = cnx.prepareStatement(Sql_Stockouts);
                 statStockOuts.setString(1,stockouts.getReference());
-                statStockOuts.setDate(2, (java.sql.Date) stockouts.getNotifyDate());
+                statStockOuts.setDate(2, (Date) stockouts.getNotifyDate());
                 statStockOuts.setInt(3,stockouts.getPieces().getId());
                 statStockOuts.setInt(4,stockouts.getConfirmAsk());
                 int confirmAddStockOuts = statStockOuts.executeUpdate();
@@ -128,7 +128,7 @@ public class ImplementCrudServices {
                 statTransaction.setString(1,transactionPiece.getReference());
                 statTransaction.setInt(2,transactionPiece.getPiece().getId());
                 statTransaction.setString(3,transactionPiece.getMachine().getReference());
-                statTransaction.setDate(4, (java.sql.Date) transactionPiece.getDateUsing());
+                statTransaction.setDate(4, (Date) transactionPiece.getDateUsing());
                 statTransaction.setInt(5,transactionPiece.getQuantityUsing());
                 statTransaction.setString(6,transactionPiece.getPersonFactory());
                 statTransaction.setString(7,transactionPiece.getType());
@@ -189,7 +189,7 @@ public class ImplementCrudServices {
                 findStockouts.setString(1,reference);
                 ResultSet resultSet = findStockouts.executeQuery();
                 String refPiece = resultSet.getString("refPiece");
-                Pieces piece = (Pieces) implementFindByRef(refPiece,Pieces.class);
+                Pieces piece = (Pieces) implementFindByRef(refPiece, Pieces.class);
                 Stockouts stockouts = new Stockouts(
                         resultSet.getString("reference"),
                         resultSet.getDate("notifyDate"),
@@ -204,8 +204,8 @@ public class ImplementCrudServices {
                 ResultSet resultSet = findTransaction.executeQuery();
                 String refPiece = resultSet.getString("refPiece");
                 String refMachine = resultSet.getString("refMachine");
-                Pieces piece = (Pieces) implementFindByRef(refPiece,Pieces.class);
-                Machine machine = (Machine) implementFindByRef(refMachine,Machine.class);
+                Pieces piece = (Pieces) implementFindByRef(refPiece, Pieces.class);
+                Machine machine = (Machine) implementFindByRef(refMachine, Machine.class);
                 TransactionPiece transactionPiece = new TransactionPiece(
                         piece,
                         machine,

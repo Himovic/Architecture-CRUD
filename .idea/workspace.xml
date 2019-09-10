@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5719cf3f-8bd5-4d3f-a72e-133197c6c19d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Models/Machine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Models/Pieces.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Models/ReferencePiece.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Models/Stockouts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Models/TransactionPiece.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/CrudService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Constants/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ServicesMap/AbstractMapService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Functions/DbManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/DbManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Functions/ImplementCrudServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/ImplementCrudServices.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,13 +28,18 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Services" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Functions" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Constants" />
+      <recent name="ServicesMap" />
+      <recent name="Functions" />
       <recent name="Services" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\InfoGenie\IdeaProjects\ArchitectureCRUD\src\Functions" />
+      <recent name="C:\Users\InfoGenie\IdeaProjects\ArchitectureCRUD\src\Services" />
       <recent name="C:\Users\InfoGenie\IdeaProjects\ArchitectureCRUD\src\Models" />
     </key>
   </component>
